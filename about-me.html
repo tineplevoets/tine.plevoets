@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>about me</title>
+    <link rel="stylesheet" href="my-website-styles.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  </head>
+  <body>
+
+  <div class="page"> <!--nodig om max. breedte DESKTOP site in te stellen -->
+
+
+<!--menubalk-->
+  <div class="section menu">
+      <div class="section name">tine plevoets</div>
+      <div class="section menubar">  <!-- container voor links naar subpages-->
+      <ul class="section navbar">
+          <li><a class="navlink" href="../index.html">home</a></li>
+          <li><a class="nav">about me</a></li>
+          <li><a class="navlink" href="../why-analist.html">why analist@FIN?</a></li>
+      </ul>
+      </div>
+  </div>
+
+<!-- header -->
+<div class="section content">
+  <div class="titlequote">
+  <div class="titlesub">about me</div>
+  <div class="quote">“La montagna non è solo nevi e dirupi, creste, torrenti, laghi, pascoli.
+    La montagna è un modo di vivere la vita. Un passo davanti all'altro, silenzio tempo e misura.”</div>
+    <div class="author">― Paolo Cognetti, Le otto montagne ―</div>
+</div>
+</div>
+
+<!--content-->
+
+<div class="section content">
+
+  <div class="contentcontainer">
+
+    <div class="picturebox"> <!-- extra container nodig. anders zou flexbox
+    voor de foto dezefde hoogte nemen als de .header container -->
+      <picture> <!-- nodig voor responsive image-->
+        <source media="(min-width: 961px)"
+              srcset="images/wagtail-portrait.jpg"/> <!-- foto voor desktop -->
+              <!--media: cut off voor wanneer welke foto gebruikt moet worden-->
+        <source media="(max-width: 960px)"
+              srcset="images/wagtail-landscape.jpg"/><!-- foto voor smartphone en tablet -->
+        <img src="images/wagtail-landscape.jpg"> <!-- only a fallback for older browsers -->
+    <!-- style="max width" om max. breedte vd foto te bepalen voor DESKTOP screen -->
+      </picture>
+    </div>
+
+    <div class="contentbox">
+      <div class="subpage-title">wagtail</div>
+      <div class="subpage-content">This is me, a wagtail. At least, that’s the nickname my Scouting friends gave me based upon my
+        character traits. Even though it has been almost 20 years now, I think
+        this nickname still suits me well.</br></br>
+
+        A wagtail is characterized by the constant bouncing of its long, dark tail.
+        It is very lively, always busy and cheerful in nature.
+        It likes company, playing and frolicking and is sometimes restless.</div>
+    </div>
+
+  </div>
+
+
+  <div class="contentcontainer">
+<div class="reversecontainer">
+    <div class="picturebox"> <!-- extra container nodig. anders zou flexbox
+    voor de foto dezefde hoogte nemen als de .header container -->
+      <picture> <!-- nodig voor responsive image-->
+        <source media="(min-width: 961px)"
+              srcset="images/me-portrait.jpg"/> <!-- foto voor desktop -->
+              <!--media: cut off voor wanneer welke foto gebruikt moet worden-->
+        <source media="(max-width: 960px)"
+              srcset="images/me-landscape.jpg"/><!-- foto voor smartphone en tablet -->
+        <img src="images/me-landscape.jpg"> <!-- only a fallback for older browsers -->
+    <!-- style="max width" om max. breedte vd foto te bepalen voor DESKTOP screen -->
+      </picture>
+    </div>
+
+    <div class="contentbox">
+      <div class="subpage-title">mountain life</div>
+      <div class="subpage-content">I love being in the mountains and the simple
+        lifestyle that comes with it. My favorite activity is hiking from cabin
+        to cabin, on foot or with skis, together with my boyfriend.
+      </br></br>I enjoy going back to basics: moving on my own, carrying everything
+      I'll need in my backpack, making a fire for cooking, sleeping outdoors or
+      in remote mountain cabins, living to the rhythm of nature.
+      </br></br>My dream is to one day move to the Aosta valley,
+      where I took the picture on the homepage.
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="contentcontainer">
+
+    <div class="picturebox"> <!-- extra container nodig. anders zou flexbox
+    voor de foto dezefde hoogte nemen als de .header container -->
+      <picture> <!-- nodig voor responsive image-->
+        <source media="(min-width: 961px)"
+              srcset="images/queyras-portrait.jpg"/> <!-- foto voor desktop -->
+              <!--media: cut off voor wanneer welke foto gebruikt moet worden-->
+        <source media="(max-width: 960px)"
+              srcset="images/queyras-landscape.jpg"/><!-- foto voor smartphone en tablet -->
+        <img src="images/queyras-landscape.jpg"> <!-- only a fallback for older browsers -->
+    <!-- style="max width" om max. breedte vd foto te bepalen voor DESKTOP screen -->
+      </picture>
+    </div>
+
+    <div class="contentbox">
+      <div class="subpage-title">outdoor sports</div>
+      <div class="subpage-content">In my spare time I like to do outdoor sports,
+        such as trail running, hiking, surfing, rock climbing, mountaineering and
+        ski touring. Ski touring is a form of skiing where you first ascend the mountain on skis
+        before skiing down. The idea is to escape the crowds and
+        find the more remote parts of the mountain and the freshest snow. </br></br>
+        I like the physical challenge, making fresh tracks and going to quiet places in the
+        mountains where you would otherwise not be able to go and
+        where you have the most breathtaking views.
+  </div>
+    </div>
+
+  </div>
+</div>
+
+
+</div> <!-- footer apart om onderaan scherm te plakken -->
+
+<!--footer-->
+<footer class="footer">
+  <div class="footerbox">
+  <!--<div class="footerbar">
+    <img class="icon" src="images/linkedin.png" href="..."/>
+    <img class="icon" src="images/github.png" href="..."/>-->
+    <div class="footertext">&copy; tine plevoets</div>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

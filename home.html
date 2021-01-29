@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tine Plevoets</title>
+    <link rel="stylesheet" href="my-website-styles.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  </head>
+  <body>
+
+  <div class="page"> <!--nodig om max. breedte DESKTOP site in te stellen -->
+
+
+<!--menubalk-->
+  <div class="section menu">
+      <div class="section name">tine plevoets</div>
+      <div class="section menubar">  <!-- container voor links naar subpages-->
+      <ul class="section navbar">
+          <li><a class="nav">home</a></li>
+          <li><a class="navlink" href="../about-me.html">about me</a></li>
+          <li><a class="navlink" href="../why-analist.html">why analist@FIN?</a></li>
+      </ul>
+      </div>
+  </div>
+
+<!--header-->
+<div class="section header">
+  <div class="headerbox">
+    <div class="illustration"> <!-- extra container nodig. anders zou flexbox
+    voor de foto dezefde hoogte nemen als de .header container -->
+      <picture> <!-- nodig voor responsive image-->
+        <source media="(min-width: 601px)"
+              srcset="images/view.jpg"/> <!--media: cut off voor wanneer welke foto gebruikt moet worden-->
+        <source media="(max-width: 600px)"
+              srcset="images/view-tall.jpg"/>
+        <img src="images/view.jpg"> <!-- only a fallback for older browsers -->
+    <!-- style="max width" om max. breedte vd foto te bepalen voor DESKTOP screen -->
+      </picture>
+    </div>
+    <div class="textbox">
+      <div class="welcometext"></div> <!--titel centreren-->
+      <div class="typewriter-box"> <!--deel typewriter-->
+      <div class="typewriter-text">hi, nice to meet you.</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!--footer-->
+<footer class="footer">
+  <div class="footerbox">
+  <!--<div class="footerbar">
+    <img class="icon" src="images/linkedin.png" href="..."/>
+    <img class="icon" src="images/github.png" href="..."/>-->
+    <div class="footertext">&copy; tine plevoets</div>
+  </div>
+</div>
+</footer>
+
+
+
+</body>
+</html>
